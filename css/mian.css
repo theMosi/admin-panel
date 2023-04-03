@@ -78,6 +78,16 @@ body {
     border-radius: 0.7rem;
 }
 
+.card-header{
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: none;
+  }
+  
+  .card-header:first-child{
+    border-radius: 0.7rem;
+  }
+  
 
 /* Sidebar */
 .sidebar {
@@ -120,6 +130,10 @@ body {
 
 .sidebar .sidebar-item .sidebar-link i {
     color: #7c8db5;
+}
+
+.sidebar .sidebar-item .sidebar-link {
+    cursor: pointer;
 }
 
 .sidebar .sidebar-item.active .sidebar-link {
@@ -168,7 +182,6 @@ body {
 /* Main */
 .main {
     background-color: #f2f7ff;
-    height: 100vh;
     transition: all 0.5s ease-out;
 }
 
