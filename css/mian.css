@@ -110,7 +110,7 @@ body {
     transition: all 0.5s ease-out;
     padding: 2rem;
     overflow-y: hidden;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .sidebar:hover {
