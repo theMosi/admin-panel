@@ -8,8 +8,30 @@
         url("../fonts/Vazir.ttf") format("truetype");
     /* Safari, Android, iOS */
 }
+
 body {
     font-family: "Vazir" !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* Sidebar */
@@ -20,7 +42,13 @@ body {
     background-color: white;
     transition: all 0.5s ease-out;
     padding: 2rem;
+    overflow-y: hidden;
 }
+
+.sidebar:hover {
+    overflow-y: auto;
+  }
+  
 
 .sidebar.inactive {
     margin-right: -250px;
@@ -56,6 +84,40 @@ body {
 .sidebar .sidebar-item.active .sidebar-link i{
     color: #fff;
 }
+
+
+.sidebar .submenu {
+    list-style: none;
+    
+}
+
+.submenu {
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.inactive{
+    display: none !important;
+}
+
+.sidebar .submenu .submenu-item a {
+    padding: 0.7rem 1rem;
+    display: block;
+    color: #25396f;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar .submenu .submenu-item a:hover{
+  margin-right: 0.3rem;
+}
+
+.sidebar .sidebar-item .bi-chevron-down {
+    font-size: 0.8rem;
+}
+
 
 /* Main */
 .main {
