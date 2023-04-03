@@ -12,8 +12,6 @@ const closeMenu = $.querySelector('.close-menu');
 const dropElems = $.querySelectorAll('.drop-item');
 const subMenusElem = $.querySelectorAll('.submenu');
 
-console.log(dropElems);
-
 if(window.innerWidth <= 992){
     open = true;
     sidebarElem.classList.add('inactive');
@@ -33,6 +31,7 @@ let toggleFunc = () => {
     console.log(open)
 }
 
+console.log(burgerMenu);
 
 burgerMenu.addEventListener('click',toggleFunc);
 closeMenu.addEventListener('click',toggleFunc);
@@ -42,4 +41,3 @@ dropElems.forEach((dropElem) => {
        dropElem.nextElementSibling.classList.toggle('inactive')
     })
 })
-
