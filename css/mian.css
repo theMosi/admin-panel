@@ -11,3 +11,22 @@
 body {
     font-family: "Vazir" !important;
 }
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+
+/* Main */
+.main {
+    background-color: #f2f7ff;
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    .main {
+        margin-right: 250px;
+    }
+}
